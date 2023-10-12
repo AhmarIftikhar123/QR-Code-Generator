@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #282c35, #0a0e11);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #fff;
+  width: 450px;
+  text-align: center;
+  border-radius: 0.3rem;
+  text-align: left;
+  padding: 1rem 3rem;
+}
+
+.description {
+  font-weight: 600;
+}
+
+#qrtext {
+  width: 75%;
+  margin-block: 1rem;
+  padding: 0.8rem 0.3rem;
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#qrtext:focus {
+  background-color: lightgray;
+  outline: 1px solid lightgray;
+}
+
+div.img_box {
+  max-height: 0;
+  margin-inline: 4rem;
+  overflow: hidden;
+  transition: max-height 1.5s;
+}
+
+div.qrimg {
+  max-height: 200px;
+}
+
+div img {
+  width: 8rem;
+}
+
+#gen_btn {
+  width: 75%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#gen_btn:hover {
+  outline: 1px solid lightgray;
+  background-color: lightgray;
+}
+
+
+input.error{
+    animation: shake .3s ease-out 10 ;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-5px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
